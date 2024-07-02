@@ -8,4 +8,10 @@
           class="ru.alishev.springcouse.ClassicalMusic">
     </bean>
 
+
+    <bean id="musicPlayer"
+          class="ru.alishev.springcouse.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
 </beans>
