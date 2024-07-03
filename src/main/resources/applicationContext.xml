@@ -5,23 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
-
-    <bean id="musicBean"
-          class="ru.alishev.springcouse.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic">
-    </bean>
-
-
-    <!--    <bean id="musicPlayer"-->
-    <!--          class="ru.alishev.springcouse.MusicPlayer"-->
-    <!--          scope="prototype">-->
-    <!--        <property name="music" ref="musicBean"/>-->
-    <!--        <property name="name" value="${musicPlayer.name}"/>-->
-    <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
-    <!--    </bean>-->
-
+    <context:component-scan base-package="ru.alishev.springcouse"/>
 
 </beans>
