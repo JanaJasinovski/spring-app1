@@ -6,5 +6,6 @@
 	   		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="ru.alishev.springcouse"/>
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
 </beans>
