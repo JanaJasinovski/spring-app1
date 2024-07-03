@@ -1,8 +1,7 @@
 package ru.alishev.springcouse;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 
-@Component
 public class Computer {
     private int id;
     private MusicPlayer musicPlayer;
